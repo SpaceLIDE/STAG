@@ -51,7 +51,7 @@ time = time - time[0]
 
 ax[0].plot(time,altitude)
 ax[0].set_ylabel('Altitude [m]')
-ax[1].plot(time[::5],a_z[::5],label='IMU')
+ax[1].plot(time[::5],a_z[::5],label='Object')
 ax[1].set_xlabel('Flight time [s]')
 ax[1].set_ylabel('Acceleration [g]')
 plt.setp(ax[0].get_xticklabels(), visible=False) 
@@ -71,7 +71,7 @@ t = np.array(t)
 # Origin alignment
 t = t-94.5
 
-ax[1].plot(t,z,linestyle='--',label='Smartphone')
+ax[1].plot(t,z,linestyle='--',label='Airframe')
 plt.setp(ax, xlim=(156,236))
 ax[0].set_ylim([1100,1500])
 ax[1].set_ylim([-0.5,4])
