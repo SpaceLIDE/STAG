@@ -96,7 +96,7 @@ ax[1].plot(time,gy)
 ax[2].plot(time,gz)
 
 ax[2].set_xlabel('Flight time [s]')
-ax[1].set_ylabel(r'Angular velocity [$rad \cdot s^{-1}$]')
+ax[1].set_ylabel(r'Angular velocity [$\degree \cdot s^{-1}$]')
       
 ax[0].grid()
 ax[1].grid()
